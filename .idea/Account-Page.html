@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Account</title>
+    <style type="text/css">
+        .basic{
+            width:48% ;
+            height: auto;
+            float: left;
+            border: 1px solid black;
+            background-color: aqua;
+            padding: 5px ;
+            background-clip: content-box;
+            margin:5px;
+        }
+        .login{
+            width: 280px;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .login h1{
+            float: left;
+            font-size: 40px;
+            border-bottom: 6px solid;
+            margin-bottom: 50px;
+            padding: 13px 0;
+        }
+        .pay{
+            font-size: 20px;
+            text-align: center;
+        }
+        .card{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="basic"><!--格式-->
+    <h1>
+        Change My Personal Information
+    </h1>
+    <br>
+    First Name*
+    <br>
+    <input type="text" placeholder="FirstName">
+    <input type="button" value="EDIT">
+    <br>
+    Last Name*
+    <br>
+    <input type="text" placeholder="LastName">
+    <input type="button" value="EDIT">
+    <br>
+    <h1>
+        Change My Email:
+    </h1>
+
+    <br>
+    Email*
+    <br>
+    <input type="Email" placeholder="Enter Email">
+    <input type="button" value="EDIT">
+    <h1>
+        Change My Password
+    </h1>
+    Current Password*
+    <br>
+    <input type="password" placeholder=" Current Password">
+    <br>
+    New Password*
+    <br>
+    <input type="password" placeholder="New Password">
+    <br>
+    Confirm New Password*
+    <br>
+    <input type="password" placeholder="Confirm New Password">
+    <br>
+    <input type="button" value="UPDATE">
+</div>
+<div class="basic">
+    <h1>
+        <u>
+            Payment Information
+        </u>
+    </h1>
+    <br>
+    <p class="pay">
+        Payment Cards
+        <a href="https://www.paypal.com/ca/for-you/account/create-account?gclid=Cj0KCQiAq97uBRCwARIsADTziyYzjKksK9NjFCtXtkFALF1qBKyKWUw7Bpyk3dEtH8jTfmFG7QSdqR0aAtw7EALw_wcB&gclsrc=aw.ds">
+            <input type="image" src="Paypal.png" width="100px" height="35px" alt="Paypal IMG" >
+        </a>
+    </p>
+    <ul>
+       <li>
+           <input type="image" src="visa.png" width="20px">
+           1234 5678 9012 2345 654
+           <input type="text" value="CVV" maxlength="3" size="4">
+       </li>
+
+        <li>
+            <input type="image" src="Master.png" width="20px">
+            0987 6543 0987 6543 123
+            <input type="text" value="CVV" maxlength="3" size="4">
+        </li>
+
+    </ul>
+    <br>
+    <h1>
+        Add Cards
+    </h1>
+    Card Holder Name*
+    <br>
+    <input type="text" placeholder="LastName">
+    <br>
+    Card Number*
+    <br>
+    <input type="text" placeholder="Card Number">
+    <br>
+    Expiry Date(MM/YY)*
+    <br>
+    <input type="text" placeholder="MM/YY">
+    <br>
+    Security Code
+    <br>
+    <input type="text" placeholder="XXX"  maxlength="3">
+    <br>
+    ZIP/Post Code
+    <br>
+    <input type="text" placeholder="Post Code">
+    <br>
+    <input type="button" value="ADD CARD">
+</div>
+</body>
+</html>
